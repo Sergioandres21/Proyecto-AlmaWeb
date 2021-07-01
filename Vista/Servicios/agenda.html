@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Agenda</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="img/A.png" />
+
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
+    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
+    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="index_estilo.css" />
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-icon">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+    <!-- /End Preloader -->
+
+    <!-- Start Header Area -->
+
+
+    <header class="header navbar-area">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <img src="Imagenes/logo3.png" class="logo-brand" alt="logo">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="icon ion-md-menu"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Index2.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonial">Contáctanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Iniciar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Icono Whatsapp -->
+    <div>
+        <a href="https://wa.link/kobe1c" class="btn-wsp" target="_blank">
+            <i class="icon ion-logo-whatsapp"></i>
+        </a>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <div class="container">
+        <main>
+            <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+                <h2>Agenda y datos boleta de pago</h2>
+                <p class="lead">A dos click de agendar tu cita😉</p>
+            </div>
+
+            <!-- Agenda -->
+            <div class="row">
+                <div class="form-group col-md-12" style="margin-bottom: 0%; margin-left: 2%;">
+                    <h6 class="text-primary" >Agenda</h6>
+                    <label class="labelRegistror" for="f_inicial" style="padding-left: 0%;">Seleccione el día<span
+                            class="required"></span></label>
+                    <input class="form-control" type="date" name="f_inicial" id="f_inicial" style="width: 50%;">
+                </div>
+            </div> <br>
+            <!--INFORMACIÓN DE BOLETA DE PAGO-->
+
+            <div class="col-md-12 col-lg-12">
+                <h6 class="text-primary">Información de boleta de pago</h6>
+                <form class="needs-validation" novalidate>
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <label for="firstName" class="form-label">Nombres</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Se requiere un nombre valido.
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <label for="lastName" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Se requiere un apellido valido.
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <label for="tel" class="form-label">Numero de teléfono</label>
+                            <input type="tel" class="form-control" id="number" placeholder="3218909">
+                            <div class="invalid-feedback">
+                                Por favor ingrese un número valido.
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="address" placeholder="ejemplo@ejemplo"
+                                required>
+                            <div class="invalid-feedback">
+                                Por favor ingrese una dirección de correo válida.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="state" class="form-check-input"></label>
+                            <select class="btn" class="form-select" id="state" required>
+                                <option value="select">📍 Departamento</option>
+                                <option>Antioquia</option>
+                                <option>Bello</option>
+                                <div class="dropdown">
+                            </select>
+                            <div class="invalid-feedback">
+                                Por favor selecciona un departamento.
+                            </div>
+                        </div><br>
+
+                        <div class="col-md-6">
+                            <label for="state" class="form-check-input"></label>
+                            <select class="btn" class="form-select" id="state" required>
+                                <option value="select">📍 Ciudad</option>
+                                <option>Medellin</option>
+                                <option>Yolombo</option>
+                                <div class="dropdown">
+                            </select>
+                            <div class="invalid-feedback">
+                                Por favor selecciona una ciudad.
+                            </div>
+                        </div>
+                    </div> <br>
+                    <a href="metododepago.html"
+                        style="background: #f8ccbf;" class="btn btn-secondary mt-4">Continuar</a> 
+                </form>
+            </div>
+    </div>
+    </main>
+    </div>
+
+
+    <!-- Start Footer Area -->
+    <footer>
+        <div class="container">
+            <img src="Imagenes/logo3.png" class="logo-brand" alt="logo">
+            <ul class="list-inline">
+                <li class="list-inline-item footer-menu"><a href="#">Inicio</a></li>
+                <li class="list-inline-item footer-menu"><a href="#">Servicios</a></li>
+                <li class="list-inline-item footer-menu"><a href="productos.html">Productos</a></li>
+                <li class="list-inline-item footer-menu"><a href="#">Nosotros</a></li>
+                <li class="list-inline-item footer-menu"><a href="#">Contáctanos</a></li>
+                <li class="list-inline-item footer-menu"><a href="#">Login</a></li>
+            </ul>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#"><i class="icon ion-logo-instagram"></i></a>
+                </li>
+                <li class="list-inline-item"><a href="#"><i class="icon ion-logo-whatsapp"></i></a>
+                </li>
+                <li class="list-inline-item"><a href="#"><i class="icon ion-md-mail"></i></a>
+                </li>
+            </ul>
+            <small>©2021 Todos los derechos reservados. Creado por <a href="#" class="font-weight-bold" target="_blank"
+                    rel="noopener">Equipo
+                    AlmaWeb</a></small>
+        </div>
+    </footer>
+    <!--/ End Footer Area -->
+
+    <!-- ========================= scroll-top ========================= -->
+    <a href="#" class="scroll-top">
+        <i class="lni lni-chevron-up"></i>
+    </a>
+
+    <!-- ========================= JS here ========================= -->
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="form-validation.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/glightbox.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro usuario</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Estilo -->
+    <link rel="stylesheet" href="../Public/Css/css_login/estilo_registro.css">
+
+    <!-- Ionic icons-->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar">
+        <div class="container">
+            <img src="../Public/Imagenes/logo3.png" class="logo-brand" alt="logo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="icon ion-md-menu"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index2.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactanos">Contáctanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php">Iniciar sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="contact-form-section" class="form-content-wrap seccion">
+        <div class="container">
+            <div class="row">
+                <div class="tab-content">
+                    <div class="col-sm-12">
+                        <div class="item-wrap">
+                            <div class="row">
+
+                                <div class="col-sm-12">
+                                    <div class="item-content colBottomMargin">
+                                        <div class="item-info">
+                                            <h2 class="item-title text-center">Formulario de registro usuario</h2>
+
+                                        </div>
+                                        <!--End item-info -->
+
+                                    </div>
+                                    <!--End item-content -->
+                                </div>
+                                <!--End col -->
+
+
+                                <form id="form" name="form">
+                                    <div class="row">
+
+
+                                        <div class="form-group col-sm-6">
+                                            <label for="nombre">Nombres*</label>
+                                            <input type="text" placeholder="Valeria" id="nombre" />
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <small>Error message</small>
+                                        </div>
+
+                                        <div class="form-group col-sm-6">
+                                            <label for="apellido">Apellidos*</label>
+                                            <input type="text" placeholder="Gómez" id="apellido" />
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <small>Error message</small>
+                                        </div>
+
+                                        <div class="form-group col-sm-6">
+                                            <label for="tipoidentificacion">Tipo de identificación*</label>
+                                            <select class="custom-select" id="tipoidentificacion">
+                                                <option value="1">Seleccione tipo de documento...</option>
+                                                <option value="2">C.C</option>
+                                                <option value="3">C.E</option>
+                                                <option value="4">T.I</option>
+                                            </select>
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <small>Error message</small>
+                                        </div>
+
+                                        <div class="form-group col-sm-6">
+                                            <label for="identificacion">Número de identificación*</label>
+                                            <input type="text" id="identificacion" placeholder="Número">
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <small>Error message</small>
+                                        </div>
+
+                                        <div class="form-group col-sm-6">
+                                            <label for="email">Email*</label>
+                                            <input type="text" placeholder="alma@gmail.com" id="email" />
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <small>Error message</small>
+                                        </div>
+
+                                        <div class="form-group col-sm-6">
+                                            <label for="celular">Celular*</label>
+                                            <input type="text" id="celular" placeholder="Número de celular" />
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <small>Error message</small>
+                                        </div>
+
+                                        <div class="form-group col-sm-6">
+                                            <label for="contrasena">Contraseña*</label>
+                                            <input type="password" placeholder="Contraseña" id="contrasena" />
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <small>Error message</small>
+                                        </div>
+
+                                        <div class="form-group col-sm-6">
+                                            <label for="contrasena2">Repetir contraseña*</label>
+                                            <input type="password" placeholder="Confirmar contraseña"
+                                                id="contrasena2" />
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <small>Error message</small>
+                                        </div>
+
+                                        <div class="form-group col-sm-6">
+                                            <label for="telefono">Teléfono (opcional)</label>
+                                            <input type="text" name="telefono" id="telefono" placeholder="Teléfono">
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <small>Error message</small>
+                                        </div>
+
+
+                                        <div class="form-group col-sm-6">
+                                            <label for="municipio">Municipio (opcional)</label>
+                                            <select class="custom-select" id="municipio">
+                                                <option value="1">Seleccione un municipio...</option>
+                                                <option value="2">Yolombó</option>
+                                                <option value="3">Medellín</option>
+                                                <option value="4">Barbosa</option>
+                                            </select>
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <small>Error message</small>
+                                        </div>
+
+                                        <div class="form-group col-sm-6">
+                                            <label for="Direccion">Dirección residencia (opcional)</label>
+                                            <input type="text" name="direccion" id="direccion"
+                                                placeholder="Carrera 30 54-22">
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <small>Error message</small>
+                                        </div>
+
+                                        <div class="form-group col-sm-6">
+                                            <label for="foto">Imagen de usuario (opcional)</label>
+                                            <input type="file" accept=".jpg,.png,.jpeg" class="form-control-file"
+                                                id="foto" placeholder="Seleccione una foto">
+                                            <i class="fas fa-check-circle"></i>
+                                            <i class="fas fa-exclamation-circle"></i>
+                                            <small>Error message</small>
+                                        </div>
+
+                                        <div class="form-group last col text-center">
+                                            <button type="submit" id="submit" class="btn btn-success btn-lg mr-4"><i
+                                                    class='fa fa-envelope'></i>Registrar</button>
+                                            <button type="submit" id="submit"
+                                                class="btn btn-secondary btn-lg"></i>Cancelar</button>
+                                        </div>
+
+                                    </div>
+                                </form>
+
+                                <script type="text/javascript" src="../Public/Js/js_inicio/registro.js"></script>
+
+                                <!-- Optional JavaScript -->
+                                <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+                                    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+                                    crossorigin="anonymous"></script>
+                                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+                                    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+                                    crossorigin="anonymous"></script>
+                                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+                                    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+                                    crossorigin="anonymous"></script>
+
+                                <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</body>
+
+</html>

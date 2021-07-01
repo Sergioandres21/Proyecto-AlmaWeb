@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración departamentos</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../Public/Css/css_configuracion/estiloindex_configuracion.css">
+
+    <!-- Ionic icons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h4>Configuración</h4>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="indexconfiguracion.html"><i class="icon ion-md-home mr-2"></i>Inicio</a>
+                </li>
+                <li class="active">
+                    <a href="configuracionDepartamento.html"><i class="icon ion-md-train mr-2"></i>Departamentos</a>
+                </li>
+                <li>
+                    <a href="configuracionMunicipio.html"><i class="icon ion-md-bus mr-2"></i>Municipios</a>
+                </li>
+                <li>
+                    <a href="configuracionPedidos.html"><i class="icon ion-md-cart lead mr-2"></i>Pedidos</a>
+                </li>
+                <li>
+                    <a href="configuracionAgenda.html"><i class="icon ion-md-calendar mr-2"></i>Agenda</a>
+                </li>
+
+                <li>
+                    <a href="#homeFirstmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                            class="icon ion-md-document mr-2"></i>Permisos</a>
+                    <ul class="collapse list-unstyled" id="homeFirstmenu">
+                        <li>
+                            <a href="configuracionPermisos.html">Permisos</a>
+                        </li>
+                        <li>
+                            <a href="configuracionPermisoRol.html">Permisos del rol</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                            class="icon ion-ios-pricetags mr-2"></i>Productos</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="configuracionTipoproducto.html">Tipo de producto</a>
+                        </li>
+                        <li>
+                            <a href="configuracionUnidadMedida.html">Unidad de medida</a>
+                        </li>
+                        <li>
+                            <a href="configuracionMarcaproducto.html">Marca de producto</a>
+                        </li>
+                        <li>
+                            <a href="configuracionTarifiaproducto.html">Tarifa de producto</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="configuracionRoles.html"><i class="icon ion-md-contacts mr-2"></i>Roles</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i
+                            class="icon ion-md-clipboard lead mr-2"></i>Servicios</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="configuracionTiposervicio.html">Tipo de servicio</a>
+                        </li>
+                        <li>
+                            <a href="configuracionTarifaservicio.html">Tarifa de servicio</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="configuracionCentroestetica.html"><i class="icon ion-md-browsers mr-2"></i>Razón social</a>
+                </li>
+                <li>
+                    <a href="formulariosHome.html"><i class="icon ion-md-desktop mr-2"></i>Home formularios</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+                <div class="container">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="icon ion-md-list"></i>
+                        <span>Mostrar / esconder menú</span>
+                    </button>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link text-dark" href="indexconfiguracion.html">Inicio</a>
+                            </li>
+
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Administrador
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Mi perfil <i
+                                            class="icon ion-md-person lead mr-2"></i></a>
+                                    <a class="dropdown-item" href="indexconfiguracion.html">Configuración <i
+                                            class="icon ion-md-settings lead mr-2"></i></a>
+                                    <a class="dropdown-item" href="#">Cuentas usuario <i
+                                            class="icon ion-md-people lead mr-2"></i></a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Cerrar sesión <i
+                                            class="icon ion-md-power lead mr-2"></i></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <header>
+                <h3 class='text-center'></h3>
+            </header>
+
+
+            <div class="container caja">
+                <div class="tabla">
+                    <div class="table-responsive">
+                        <div class="table-wrapper">
+                            <div class="table-title">
+                                <div class="row">
+                                    <div class="col col-lg-6">
+                                        <h2>Departamentos</h2>
+                                    </div>
+                                    <div class="col col-lg-3">
+                                        <button type="button" class="btn btn-secondary" data-toggle="modal"
+                                            data-target="#Registrar">
+                                            <i class="icon ion-md-add mr-2"></i>Nuevo registro
+                                        </button>
+                                    </div>
+                                    <div class="col col-lg-3">
+                                        <div class="search-box">
+                                            <i class="icon ion-md-search"></i>
+                                            <input type="text" class="form-control" placeholder="Buscar&hellip;">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="selectAll">
+                                                <label for="selectAll"></label>
+                                            </span>
+                                        </th>
+                                        <th>Código del departamento</th>
+                                        <th>Nombre del departamento</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="checkbox1" name="options[]" value="1">
+                                                <label for="checkbox1"></label>
+                                            </span>
+                                        </td>
+                                        <td>102</td>
+                                        <td>Antioquia</td>
+                                        <td>
+                                            <a href="#miModalModificar" class="edit" data-toggle="modal"><i
+                                                    class="icon ion-md-create"></i></a>
+                                            <a href="#" onclick="mensaje1();" class="active" data-toggle="modal"><i
+                                                    class="icon ion-md-power"></i></a>
+                                            <a href="#" onclick="mensaje2();" class="delete" data-toggle="modal"><i
+                                                    class="icon ion-md-power"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="checkbox2" name="options[]" value="1">
+                                                <label for="checkbox2"></label>
+                                            </span>
+                                        </td>
+                                        <td>104</td>
+                                        <td>Amazonas</td>
+                                        <td>
+                                            <a href="#miModalModificar" class="edit" data-toggle="modal"><i
+                                                    class="icon ion-md-create"></i></a>
+                                            <a href="#" onclick="mensaje1();" class="active" data-toggle="modal"><i
+                                                    class="icon ion-md-power"></i></a>
+                                            <a href="#" onclick="mensaje2();" class="delete" data-toggle="modal"><i
+                                                    class="icon ion-md-power"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="custom-checkbox">
+                                                <input type="checkbox" id="checkbox3" name="options[]" value="1">
+                                                <label for="checkbox3"></label>
+                                            </span>
+                                        </td>
+                                        <td>106</td>
+                                        <td>Huila</td>
+                                        <td>
+                                            <a href="#miModalModificar" class="edit" data-toggle="modal"><i
+                                                    class="icon ion-md-create"></i></a>
+                                            <a href="#" onclick="mensaje1();" class="active" data-toggle="modal"><i
+                                                    class="icon ion-md-power"></i></a>
+                                            <a href="#" onclick="mensaje2();" class="delete" data-toggle="modal"><i
+                                                    class="icon ion-md-power"></i></a>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <div class="clearfix">
+                                <div class="hint-text"> Mostrando <b>5</b> de <b>25</b> entradas</div>
+                                <ul class="pagination">
+                                    <li class="page-item disabled"><a href="#">Anterior</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                    <li class="page-item active"><a href="#" class="page-link">3</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                    <li class="page-item"><a href="#" class="page-link">Siguiente</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Modal para CRUD-->
+
+                <div class="modal fade" id="Registrar" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="Registrar" id="exampleModalLabel">Formulario de registro departamento</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <form id="formdepartamento" action="">
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="IDdepartamento" class="col-form-label">Código del
+                                                    departamento:</label>
+                                                <input type="text" class="form-control" id="IDdepartamento"
+                                                    name="IDdepartamento">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="nombredepartamento" class="col-form-label">Nombre del departamento:</label>
+                                                <input type="text" class="form-control" id="nombredepartamento"
+                                                    name="nombredepartamento">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
+                                    <button type="button" id="create" class="btn btn-success">Guardar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Modal para el modificar-->
+
+                <div class="modal fade" id="miModalModificar" tabindex="-1" role="dialog" aria-labelledby="modificar"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modificar" id="exampleModalLabel">Modificar departamento</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <form id="formdepartamentomodificar" action="">
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="IDdepartamentoM" class="col-form-label">Código del
+                                                    departamento:</label>
+                                                <input type="text" class="form-control" id="IDdepartamentoM" name="IDdepartamentoM" value="1">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="nombredepartamentoM" class="col-form-label">Nombre del departamento</label>
+                                                <input type="text" class="form-control" id="nombredepartamentoM" name="nombredepartamentoM" value="Antioquia">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-light" data-dismiss="modal">Cancelar</button>
+                                    <button type="button" id="botonM" class="btn btn-success">Actualizar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+
+        <script src="../Public/Js/js_configuracion/traducciones.js"></script>
+
+        <!-- Optional JavaScript -->
+        <script type="text/javascript" src="../Public/Js/js_configuracion/configuracion1.js"></script>
+
+        <!--Libreria para alertas-->
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+        
+
+        <script>
+            $(document).ready(function () {
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').toggleClass('active');
+                });
+            });
+        </script>
+
+        <script>
+            // Seleccionar y desactivar check box
+            var checkbox = $('table tbody input[type="checkbox"]');
+            $("#selectAll").click(function () {
+                if (this.checked) {
+                    checkbox.each(function () {
+                        this.checked = true;
+                    });
+                } else {
+                    checkbox.each(function () {
+                        this.checked = false;
+                    });
+                }
+            });
+            checkbox.click(function () {
+                if (!this.checked) {
+                    $("#selectAll").prop("checked", false);
+                }
+            });
+        </script>
+
+</body>
+
+</html>

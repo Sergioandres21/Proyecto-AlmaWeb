@@ -1,0 +1,36 @@
+.navbar {
+    background-color: #FEDCD2;
+    min-height: 100px;
+    font-size: 18px;
+  }
+  
+  .nav-link { color: var(--dark-color); }
+  .nav-link:hover { color: var(--dark-color); }
+  
+  .navbar-toggler { font-size: 40px; }
+  .navbar-toggler:focus { outline: none; }
+  
+.logo-brand {
+    max-width: 160px;
+    min-width: 160px;
+}
+
+.form-group {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+
+.imagen {
+	margin-top: 110px;
+	max-width: 200px;
+}
+
+.titulo {
+  margin-top: 150px;
+}
+
+.aviso {
+  color: #5BB783;
+}
