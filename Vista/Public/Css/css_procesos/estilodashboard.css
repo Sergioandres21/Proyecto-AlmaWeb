@@ -35,27 +35,6 @@ a:hover {
     background-color: var(--primary);
 }
 
-/*
-
-#sidebar-container {
-    min-height: 100vh;
-    margin-left: -18rem;
-    -webkit-transition: margin .25s ease-out;
-    -moz-transition: margin .25s ease-out;
-    -o-transition: margin .25s ease-out;
-    transition: margin .25s ease-out;
-}
-  
-#sidebar-container .logo{
-    padding: 0.875rem 1.25rem;
-}
-  
-#sidebar-container .menu {
-    width: 18rem;
-}
-
-*/
-
 #content {
     overflow-y: auto;
     height: 100vh;
@@ -73,22 +52,6 @@ a:hover {
 .stat {
     border-right: 1px solid var(--grey);
 }
-
-/*
-
-#content-wrapper.toggled #sidebar-container {
-    margin-left: 0;
-}
-  
-@media (min-width: 768px) {
-    #sidebar-container {
-      margin-left: 0;
-    }
-    #content-wrapper.toggled #sidebar-container {
-      margin-left: -18rem;
-    }
-}
-*/
 
 a,
 a:hover,
@@ -194,19 +157,6 @@ ul.CTAs a {
     margin-bottom: 5px;
 }
 
-
-
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ 
-
-#content {
-    width: 100%;
-    padding: 20px;
-    min-height: 100vh;
-    transition: all 0.3s;
-}
-*/
 
 /* ---------------------------------------------------
     MEDIAQUERIES
