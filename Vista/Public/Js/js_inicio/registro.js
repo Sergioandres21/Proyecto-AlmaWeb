@@ -41,7 +41,7 @@ function checkInputs() {
 	const numer = /^3[\d]{9}$/;
 	const cedula = /^((\d{8})|(\d{10})|(\d{11})|(\d{6}-\d{5}))?$/;
 	const pass = /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,55}$/;
-	const tele = /^[1-9]\d{6}$/;
+	const tele = /^[1-9]\d{10}$/;
 	
 	if(nombreValue === '') {
 		setErrorFor(nombre, 'El nombre es obligatorio');
@@ -151,7 +151,7 @@ function checkInputs() {
 		setSuccessFor(foto);
 	}
 
-	swal('Correcto','Usuario registrado con exito','success');
+	swal('Correcto','Usuario registrado con exito, inicia sesión en tu cuenta','success');
 
 }
 

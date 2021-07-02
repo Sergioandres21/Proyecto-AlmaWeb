@@ -3,7 +3,8 @@ $("#formulario").validate({
     rules: {
     numeroidentificacion:{
         required: true,
-        digits: true
+        digits: true,
+        validarIdent: /^((\d{8})|(\d{10})|(\d{11})|(\d{6}-\d{5}))?$/,
       },
       IDrol: {
         required: true,
@@ -31,9 +32,11 @@ $("#formulario").validate({
     celular: {
         required: true,
         digits: true,
+        validarCelu: /^3[\d]{9}$/,
     },
     telefono: {
         digits: true,
+        validarTele: /^[1-9]\d{10}$/,
     },
     residencia: {
         maxlength: 54,
@@ -43,6 +46,21 @@ $("#formulario").validate({
     }
     },
   })
+
+  $.validator.addMethod('validarIdent', function(value, element, param) 
+      {
+        return this.optional(element) || value.match(param);
+      },'El número de identificación no es correcto');
+  
+$.validator.addMethod('validarTele', function(value, element, param) 
+      {
+        return this.optional(element) || value.match(param);
+    },'El número de teléfono no es correcto');
+
+$.validator.addMethod('validarCelu', function(value, element, param) 
+    {
+      return this.optional(element) || value.match(param);
+  },'El número de celular no es correcto');
   
   $("#Guardar").click(function(){
     if($("#formulario").valid() == false){
@@ -77,9 +95,11 @@ $("#formulario").validate({
         celularM: {
           required: true,
           digits: true,
+          validarCelu: /^3[\d]{9}$/,
         },
         telefonoM: {
             digits: true,
+            validarTele: /^[1-9]\d{10}$/,
         },
         residenciaM: {
             maxlength: 54,

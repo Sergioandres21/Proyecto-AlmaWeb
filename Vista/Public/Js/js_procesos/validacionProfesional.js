@@ -3,7 +3,8 @@ $("#formulario").validate({
     rules: {
     numeroidentificacion:{
         required: true,
-        digits: true
+        digits: true,
+        validarIdent: /^((\d{8})|(\d{10})|(\d{11})|(\d{6}-\d{5}))?$/,
       },
       IDrol: {
         required: true,
@@ -31,6 +32,7 @@ $("#formulario").validate({
     celular: {
         required: true,
         digits: true,
+        validarCelu: /^3[\d]{9}$/,
     },
     residencia: {
         maxlength: 54,
@@ -47,6 +49,16 @@ $("#formulario").validate({
     }
     swal('Correcto','Profesional registrado con exito','success');
   })
+
+  $.validator.addMethod('validarIdent', function(value, element, param) 
+  {
+    return this.optional(element) || value.match(param);
+  },'El número de identificación no es correcto');
+
+$.validator.addMethod('validarCelu', function(value, element, param) 
+{
+  return this.optional(element) || value.match(param);
+},'El número de celular no es correcto');
 
   $("#numeroidentificacionM").attr("disabled",true);
   $("#IDrolM").attr("disabled",true);
@@ -74,6 +86,7 @@ $("#formulario").validate({
         celularM: {
             required: true,
             digits: true,
+            validarCelu: /^3[\d]{9}$/,
         },
         residenciaM: {
             maxlength: 54,

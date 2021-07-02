@@ -13,6 +13,9 @@
 
     <link rel="stylesheet" href="../Public/Css/css_procesos/estilo.css">
 
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../Public/Imagenes/A.png" />
+
     <!-- Ionic icons -->
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
@@ -20,21 +23,23 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light border-bottom nav">
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom">
         <div class="container">
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="icon ion-md-list"></i>
+                <span>Mostrar / esconder menú</span>
+            </button>
 
-            <a class="navbar-brand" href="dashboard.html"><img src="../Public/Imagenes/logo3.png" class="logo">
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                        <a class="nav-link text-dark" href="indexconfiguracion.html">Inicio</a>
+                        <a class="nav-link text-dark" href="dashboard.html">Inicio</a>
                     </li>
 
 
@@ -46,12 +51,12 @@
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="PerfilAdmin.html">Mi perfil <i
                                     class="icon ion-md-person lead mr-2"></i></a>
-                            <a class="dropdown-item" href="indexconfiguracion.html">Configuración <i
+                            <a class="dropdown-item" href="../Configuracion/indexconfiguracion.html">Configuración <i
                                     class="icon ion-md-settings lead mr-2"></i></a>
-                            <a class="dropdown-item" href="#">Cuentas usuario <i
+                            <a class="dropdown-item" href="../CuentaUsuario/usuario.html">Cuentas usuario <i
                                     class="icon ion-md-people lead mr-2"></i></a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Cerrar sesión <i
+                            <a class="dropdown-item" href="../../Index.php">Cerrar sesión <i
                                     class="icon ion-md-power lead mr-2"></i></a>
                         </div>
                     </li>

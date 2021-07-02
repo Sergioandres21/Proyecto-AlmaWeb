@@ -2,72 +2,87 @@
 <html lang="es">
 
 <head>
-	<!DOCTYPE html>
-	<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Olvide usuario</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Olvide usuario</title>
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-		<!-- Estilo -->
-		<link rel="stylesheet" href="../Public/Css/css_login/estilorecuperacion.css">
+        <!-- Estilo -->
+        <link rel="stylesheet" href="../Public/Css/css_login/estilorecuperacion.css">
 
-		<!-- Ionic icons-->
-		<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <!-- Ionic icons-->
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="../Public/Imagenes/A.png" />
 
 
-		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-			integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-			crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous" />
 
-	</head>
+    </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg fixed-top navbar">
-		<div class="container">
-			<img src="../Public/Imagenes/logo3.png" class="logo-brand" alt="logo">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<i class="icon ion-md-menu"></i>
-			</button>
+    <nav class="navbar navbar-expand-lg fixed-top navbar">
+        <div class="container">
+            <img src="../Public/Imagenes/logo3.png" class="logo-brand" alt="logo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="icon ion-md-menu"></i>
+            </button>
 
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../../Index.php"><ion-icon name="home-outline" class="mr-2"></ion-icon>Inicio</a>
+                        <a class="nav-link" href="../../Index.php">
+                            <ion-icon name="home-outline" class="mr-2"></ion-icon>Inicio
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Servicios/indexservicio.html"><ion-icon name="bookmarks-outline" class="mr-2"></ion-icon>Servicios</a>
+                        <a class="nav-link" href="../Servicios/indexservicio.html">
+                            <ion-icon name="bookmarks-outline" class="mr-2"></ion-icon>Servicios
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Productos/Productos.html"><ion-icon name="bag-handle-outline" class="mr-2"></ion-icon>Productos</a>
+                        <a class="nav-link" href="../Productos/Productos.html">
+                            <ion-icon name="bag-handle-outline" class="mr-2"></ion-icon>Productos
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../Index.php #nosotros"><ion-icon name="accessibility-outline" class="mr-2"></ion-icon>Nosotros</a>
+                        <a class="nav-link" href="../../Index.php #nosotros">
+                            <ion-icon name="accessibility-outline" class="mr-2"></ion-icon>Nosotros
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../Index.php #contact"><ion-icon name="at-circle-outline" class="mr-2"></ion-icon>Contáctanos</a>
+                        <a class="nav-link" href="../../Index.php #contact">
+                            <ion-icon name="at-circle-outline" class="mr-2"></ion-icon>Contáctanos
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../Productos/carrito.html">
-                                <ion-icon name="cart-outline" class="mr-2"></ion-icon>Carrito
+                            <ion-icon name="cart-outline" class="mr-2"></ion-icon>Carrito
                         </a>
-                        </li>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php"><ion-icon name="log-in-outline" class="mr-2"></ion-icon>Iniciar sesión</a>
+                        <a class="nav-link" href="login.php">
+                            <ion-icon name="log-in-outline" class="mr-2"></ion-icon>Iniciar sesión
+                        </a>
                     </li>
                 </ul>
-			</div>
-		</div>
-	</nav>
+            </div>
+        </div>
+    </nav>
 
-	<div class="container">
+    <div class="container">
         <div class="row">
             <div class="col-sm-12">
                 <div class="row justify-content-center">
@@ -94,7 +109,8 @@
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email2" name="email2" placeholder="Correo electrónico">
+                        <input type="email" class="form-control" id="email2" name="email2"
+                            placeholder="Correo electrónico">
                     </div>
                 </div>
                 <div class="col-12">
@@ -109,7 +125,7 @@
 
     </div>
 
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
@@ -118,13 +134,13 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
     <script src="../Public/Js/js_login/validacion.js"></script>
 
     <script src="../Public/Js/js_login/traducciones.js"></script>
 
-	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>
 

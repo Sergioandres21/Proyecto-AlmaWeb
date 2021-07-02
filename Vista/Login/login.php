@@ -14,6 +14,9 @@
   <!-- Estilo -->
   <link rel="stylesheet" href="../Public/Css/css_login/login.css">
 
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="../Public/Imagenes/A.png" />
+
   <!-- Ionic icons-->
   <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
 

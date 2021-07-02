@@ -25,19 +25,23 @@ $("#formulario").validate({
       numeroidentificacion: {
         required: true,
         digits: true,
+        validarIdent: /^((\d{8})|(\d{10})|(\d{11})|(\d{6}-\d{5}))?$/,
       },
       IdentificadorU: {
         required: true,
         digits: true,
+        equalTo: "#numeroidentificacion",
       },
       municipio: {
         required: true,
       },
       nombre: {
         required: true,
+        maxlength: 45,
       },
       apellido: {
         required: true,
+        maxlength: 40,
       },
       tipodocumento: {
         required: true,
@@ -49,19 +53,37 @@ $("#formulario").validate({
       telefono: {
         required: true,
         digits: true,
+        validarTele: /^[1-9]\d{10}$/,
       },
       celular: {
         required: true,
         digits: true,
+        validarCelu: /^3[\d]{9}$/,
       },
       residencia: {
         required: true,
+        maxlength:55,
       },
       estado2: {
         required: true,
       },
     },
   })
+
+  $.validator.addMethod('validarIdent', function(value, element, param) 
+      {
+        return this.optional(element) || value.match(param);
+      },'El número de identificación no es correcto');
+  
+$.validator.addMethod('validarTele', function(value, element, param) 
+      {
+        return this.optional(element) || value.match(param);
+    },'El número de teléfono no es correcto');
+
+$.validator.addMethod('validarCelu', function(value, element, param) 
+    {
+      return this.optional(element) || value.match(param);
+  },'El número de celular no es correcto');
   
   $("#Guardar").click(function () {
     if ($("#formulario").valid() == false) {
@@ -70,17 +92,26 @@ $("#formulario").validate({
     swal('Correcto', 'Agenda registrada con exito', 'success');
   })
   
-  /*
-  $("#servicioM").attr("disabled", true);
+
+  $("#IDagendaM").attr("disabled", true);
   
   $("#formulario2").validate({
     rules: {
-      tituloM: {
+      servicioM: {
         required: true,
       },
-      imagenM: {
+      profesionalM: {
         required: true,
       },
+      fechaM: {
+        required: true,
+      },
+      horaM: {
+        required: true,
+      },
+      estadoM: {
+        required: true,
+      }
     },
   })
   
@@ -88,10 +119,12 @@ $("#formulario").validate({
     if ($("#formulario2").valid() == false) {
       return;
     }
-    swal('Correcto', 'Información actualizada con exito', 'success');
+    swal('Correcto', 'Agenda actualizada con exito', 'success');
   })
-  */
-  
+
+
+
+/*  
   function mensaje1() {
     swal({
       title: "Pregunta",
@@ -131,3 +164,4 @@ $("#formulario").validate({
       });
     return 0;
   }
+*/

@@ -4,6 +4,7 @@ $("#formulario").validate({
       Idusuario:{
         required: true,
         digits: true,
+        validarIdent: /^((\d{8})|(\d{10})|(\d{11})|(\d{6}-\d{5}))?$/,
       },
       Idrol: {
         required: true,
@@ -15,18 +16,32 @@ $("#formulario").validate({
       numero: {
         required:true,
         digits:true,
-        maxlength:11
+        validarCelu: /^3[\d]{9}$/,
       },
         contrasena: {
           required:true,
-          minlength:5,
-          maxlength:20,
+          pass : /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,55}$/,
         },
         contrasena1: {
           required:true,
           equalTo:"#contrasena" },
     },
   })
+
+  $.validator.addMethod('validarIdent', function(value, element, param) 
+  {
+    return this.optional(element) || value.match(param);
+  },'El número de identificación no es correcto');
+
+  $.validator.addMethod('pass', function(value, element, param) 
+  {
+    return this.optional(element) || value.match(param);
+  },'La contraseña debe tener al entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.');
+
+  $.validator.addMethod('validarCelu', function(value, element, param) 
+  {
+    return this.optional(element) || value.match(param);
+  },'El número de celular no es correcto');
   
   
   $("#Guardar").click(function(){
@@ -46,12 +61,11 @@ $("#formulario").validate({
       numeroM: {
         required:true,
         digits:true,
-        maxlength:11
+        validarCelu: /^3[\d]{9}$/,
       },
         contrasenaM: {
           required:true,
-          minlength:5,
-          maxlength:20,
+          pass : /^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,55}$/,
         },
         contrasenaM1: {
           required:true,
