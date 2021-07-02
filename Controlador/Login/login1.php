@@ -12,7 +12,7 @@
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Estilo -->
-  <link rel="stylesheet" href="../Public/Css/css_login/login.css">
+  <link rel="stylesheet" href="../../Vista/Public/Css/css_login/login.css">
 
   <!-- Ionic icons-->
   <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
 <body>
   <nav class="navbar navbar-expand-lg fixed-top navbar">
     <div class="container">
-      <img src="../Public/Imagenes/logo3.png" class="logo-brand" alt="logo">
+      <img src="../../Vista/Public/Imagenes/logo3.png" class="logo-brand" alt="logo">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="icon ion-md-menu"></i>
@@ -36,10 +36,10 @@
                         <a class="nav-link" href="../../Index.php"><ion-icon name="home-outline" class="mr-2"></ion-icon>Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Servicios/indexservicio.html"><ion-icon name="bookmarks-outline" class="mr-2"></ion-icon>Servicios</a>
+                        <a class="nav-link" href="../../Vista/Servicios/indexservicio.html"><ion-icon name="bookmarks-outline" class="mr-2"></ion-icon>Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Productos/Productos.html"><ion-icon name="bag-handle-outline" class="mr-2"></ion-icon>Productos</a>
+                        <a class="nav-link" href="../../Vista/Productos/Productos.html"><ion-icon name="bag-handle-outline" class="mr-2"></ion-icon>Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="../../Index.php #nosotros"><ion-icon name="accessibility-outline" class="mr-2"></ion-icon>Nosotros</a>
@@ -78,15 +78,15 @@
               <button type="submit" class="btn btn-primary btn-lg mt-3 ff-login-btn font-weight-bold">Ingresar</button>
               <div class="pie-form">
                 <div class="text-center">
-                  <a href="Olvidastecontrasena.html">¿Olvidaste tu contraseña?</a>
+                  <a href="../../Vista/Login/Olvidastecontrasena.html">¿Olvidaste tu contraseña?</a>
                 </div>
                 <div class="text-center">
-                  <a href="Olvidousuario.html">¿Olvidaste tu usuario?</a>
+                  <a href="../../Vista/Login/Olvidousuario.html">¿Olvidaste tu usuario?</a>
                 </div>
               </div>
             </form>
             <div class="text-center">¿No tiene una cuenta de AlmaWeb?
-              <a href="../Registro Usuario/RegistroUsuario.html" class="boton-regis btn-lg">Registrarme</a>
+              <a href="../../Vista/Registro Usuario/RegistroUsuario.html" class="boton-regis btn-lg">Registrarme</a>
             </div>
           </div>
         </div>

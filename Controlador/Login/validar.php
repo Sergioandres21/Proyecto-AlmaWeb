@@ -20,13 +20,13 @@ $filas1 = mysqli_num_rows($resultado2);
 
 
 if($filas){
-    header("location:Vista/Procesos/dashboard.html");
+    header("location:../../Vista/Procesos/dashboard.html");
 } elseif ($filas1) {
-    header("location:Vista/Vista usuario/index.html");
+    header("location:../../Vista/Vista/usuario/index.html");
 }else{
     ?>
     <?php
-    include("login.php");
+    include_once("login1.php");
     ?>
 
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>

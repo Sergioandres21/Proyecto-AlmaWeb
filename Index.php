@@ -13,25 +13,23 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Style -->
-    <link rel="stylesheet" href="Vista/assets/Css/index_estilo.css">
-
-    <!-- Google fonts 
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600" rel="stylesheet"> -->
+    <link rel="stylesheet" href="Vista/Public/Css/css_index/index_estilo.css">
 
     <!-- Ionic icons-->
     <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images//favicon.png" />
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="Vista/Public/Imagenes/A.png" />
 
     <title>AlmaWeb Página principal</title>
 </head>
 
 
 <body>
+<header class="header navbar-area">
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a href="Index2.html"><img src="Vista/assets/Imagenes/logo3.png" class="logo-brand" alt="logo"></a>
+            <a href="Index2.html"><img src="Vista/Public/Imagenes/logo3.png" class="logo-brand" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="icon ion-md-menu"></i>
@@ -40,27 +38,33 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#hero">Inicio</a>
+                        <a class="nav-link" href="#hero"><ion-icon name="home-outline" class="mr-2"></ion-icon>Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Servicios/indexservicio.html">Servicios</a>
+                        <a class="nav-link" href="Vista/Servicios/indexservicio.html"><ion-icon name="bookmarks-outline" class="mr-2"></ion-icon>Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Productos/productos.html">Productos</a>
+                        <a class="nav-link" href="Vista/Productos/Productos.html"><ion-icon name="bag-handle-outline" class="mr-2"></ion-icon>Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Nosotros</a>
+                        <a class="nav-link" href="#nosotros"><ion-icon name="accessibility-outline" class="mr-2"></ion-icon>Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testimonial">Contáctanos</a>
+                        <a class="nav-link" href="#contact"><ion-icon name="at-circle-outline" class="mr-2"></ion-icon>Contáctanos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Vista/Login/login.php">Iniciar sesión</a>
+                        <a class="nav-link" href="Vista/Productos/carrito.html">
+                                <ion-icon name="cart-outline" class="mr-2"></ion-icon>Carrito
+                        </a>
+                        </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Vista/Login/login.php"><ion-icon name="log-in-outline" class="mr-2"></ion-icon>Iniciar sesión</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+</header>
 
     <div>
         <a href="https://wa.link/kobe1c" class="btn-wsp" target="_blank">
@@ -73,12 +77,12 @@
             <div class="content-center">
                 <h1 class="mt-5">Alma centro de estética</h1>
                 <p>Todo para el cuidado de la piel en nuestras manos.</p>
-                <a href="#" class="btn btn-secondary mt-4">Agendar una cita <i class="icon ion-md-arrow ml-2"></i></a>
+                <a href="Vista/Servicios/agenda.html" class="btn btn-secondary mt-4">Agendar una cita <i class="icon ion-md-arrow ml-2"></i></a>
             </div>
         </duv>
     </section>
 
-    <section id="portfolio">
+    <section id="servicios">
         <div class="container-fluid">
             <div class="content-center">
                 <h2>Nuestros <b>Servicios.</b></h2>
@@ -89,64 +93,64 @@
                 <div class="col-md-6">
                     <div class="portfolio-container">
                         <div class="portfolio-details">
-                            <a href="#">
+                            <a href="Vista/Servicios/indexservicio.html #faciales">
                                 <h3>Servicios Faciales</h3>
                             </a>
-                            <a href="#">
+                            <a href="Vista/Servicios/indexservicio.html #faciales">
                                 <p>Cuidado fácial</p>
                             </a>
                         </div>
-                        <img src="Vista/assets/Imagenes/Servicio1.jpg" class="img-fluid" alt="Portfolio 01">
+                        <img src="Vista/Public/Imagenes/Servicio1.jpg" class="img-fluid" alt="Portfolio 01">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="portfolio-container">
                         <div class="portfolio-details">
-                            <a href="#">
+                            <a href="Vista/Servicios/indexservicio.html #corporales">
                                 <h3>Servicios Corporales</h3>
                             </a>
-                            <a href="#">
+                            <a href="Vista/Servicios/indexservicio.html #corporales">
                                 <p>Cuidado corporal</p>
                             </a>
                         </div>
-                        <img src="Vista/assets/Imagenes/Servicio2.jpg" class="img-fluid" alt="Portfolio 02">
+                        <img src="Vista/Public/Imagenes/Servicio2.jpg" class="img-fluid" alt="Portfolio 02">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="portfolio-container">
                         <div class="portfolio-details">
-                            <a href="#">
+                            <a href="Vista/Servicios/indexservicio.html #faciales">
                                 <h3>Servicios de depilación</h3>
                             </a>
-                            <a href="#">
+                            <a href="Vista/Servicios/indexservicio.html #faciales">
                                 <p>Piel perfecta</p>
                             </a>
                         </div>
-                        <img src="Vista/assets/Imagenes/Servicios3.jpg" class="img-fluid" alt="Portfolio 03">
+                        <img src="Vista/Public/Imagenes/Servicios3.jpg" class="img-fluid" alt="Portfolio 03">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="portfolio-container">
                         <div class="portfolio-details">
-                            <a href="#">
+                            <a href="Vista/Servicios/indexservicio.html #corporales">
                                 <h3>Masajes</h3>
                             </a>
-                            <a href="#">
+                            <a href="Vista/Servicios/indexservicio.html #corporales">
                                 <p>Relajación múscular</p>
                             </a>
                         </div>
-                        <img src="Vista/assets/Imagenes/Servicio4.jpg" class="img-fluid" alt="Portfolio 04">
+                        <img src="Vista/Public/Imagenes/Servicio4.jpg" class="img-fluid" alt="Portfolio 04">
                     </div>
                 </div>
             </div>
             <div class="text-center mt-4">
                 <p class="">¿Deseas ver todos los servicios?</p>
-                <a href="#" class="text-dark"><b>Ver servicios.</b></a>
+                <a href="Vista/Servicios/indexservicio.html" class="text-dark"><b>Ver servicios.</b></a>
             </div>
         </div>
     </section>
 
-    <section>
+    <section id="productos">
         <div class="container">
             <div class="row">
                 <div class="content-center">
@@ -163,30 +167,30 @@
                           </ol>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <a href="#">
-                                    <img class="d-block w-100" src="Vista/assets/Imagenes/faciales.png" alt="First slide">
+                                <a href="Vista/Productos/productos.html #faciales">
+                                    <img class="d-block w-100" src="Vista/Public/Imagenes/Faciales.png" alt="First slide">
                                 </a>
                                 <div class="carousel-caption">
                                     <h3>Productos Faciales</h3>
-                                    <p>We had such a great time in LA!</p>
+                                    <p>Lo mejor para todo tipo de piel!</p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <a href="#">
-                                    <img class="d-block w-100" src="Vista/assets/Imagenes/Capilares.png" alt="Second slide">
+                                <a href="Vista/Productos/productos.html #capilar">
+                                    <img class="d-block w-100" src="Vista/Public/Imagenes/capilares.png #capilares" alt="Second slide">
                                     <div class="carousel-caption">
                                 </a>
                                 <h3>Productos Capilares</h3>
-                                <p>We had such a great time in LA!</p>
+                                <p>Excelente calidad para el cuidado del cabello!</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <a href="#">
-                                <img class="d-block w-100" src="Vista/assets/Imagenes/Producto3.jpg" alt="Third slide">
+                            <a href="Vista/Productos/productos.html #facial2">
+                                <img class="d-block w-100" src="Vista/Public/Imagenes/Producto3.jpg" alt="Third slide">
                             </a>
                             <div class="carousel-caption">
                                 <h3>Más productos faciales</h3>
-                                <p>We had such a great time in LA!</p>
+                                <p>Animate a comprar!</p>
                             </div>
                         </div>
                     </div>
@@ -203,24 +207,22 @@
         </div>
         <div class="text-center mt-4">
             <p class="">¿Deseas ver todos los productos?</p>
-            <a href="#" class="text-dark"><b>Ver productos.</b></a>
+            <a href="Vista/Productos/productos.html" class="text-dark"><b>Ver productos.</b></a>
         </div>
         </div>
     </section>
 
-    <section id="pricing" class="divider">
+    <section id="nosotros" class="divider">
         <div class="container">
             <div class="content-center">
                 <h2>Información sobre nuestra <b>microempresa</b></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ea consequuntur, odit veniam mollitia
-                    aliquam reiciendis dignissimos, vitae sapiente neque, cum dolorum. Suscipit expedita obcaecati
-                    nesciunt error ut quidem autem.</p>
+                <p>A continuación conoceras un poco acerca de nosotros e ideales a futuro.</p>
             </div>
             <div class="row">
                 <div class="col-md-6">
                     <div class="pricing-container">
                         <div class="plans">
-                            <h3><b>¿Quienes somos?</b></h3>
+                            <h3> <b> ¿Quienes somos? </b></h3>
                             <p>“ALMA CENTRO DE ESTÉTICA” 
                                 es una microempresa de servicios en belleza y estética, con domicilio 16-188 Calle Santa Bárbara, 
                                 Yolombó, Colombia, constituida en junio del año 2020 y que tiene por objeto brindar a sus clientes: 
@@ -232,7 +234,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="pricing-container">
-                        <div class="plans">
+                        <div class="plans2">
                             <h3><b>Misión</b></h3>
                             <p>Somos un Centro Integral de Estética y belleza dedicado a mejorar y mantener la belleza del rostro y cuerpo buscando 
                             la unificación del concepto belleza-salud, mediante productos de alta calidad en combinación con aparatología de última generación 
@@ -258,14 +260,15 @@
     <section id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 mt-4">
-                    <h3><b>¿Tienes alguna duda?</b></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui ea consequuntur, odit veniam
-                        mollitia aliquam reiciendis dignissimos, vitae sapiente neque, cum dolorum.
-                        almacentro@gmail.com</p>
+                <div class="col-md-6 mt-4 map-responsive">
+                <h4 class="text-center"><b>¿Cómo llegar a nuestras instalaciones?</b></h4>
+                    <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.8499583299763!2d-75.01228291192166!3d6.597128931925207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4475d3013f8a4b%3A0xeba91ed1b5dadabb!2sCarrera%2018%20%2317-02%2C%20Yolomb%C3%B3%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1622432454900!5m2!1ses!2sco"
+                    allowfullscreen="" loading="lazy"></iframe>
                 </div>
                 
-                <div class="col-md-6 mt-4">
+                <div class="col-md-6 mt-5">
+                <h3 class="text-center"><b>Contáctanos</b></h3>
                     <form id="formcontacto">
                     <div class="row">
                         <div class="col-md-6">
@@ -306,14 +309,14 @@
 
     <footer>
         <div class="container">
-            <img src="Imagenes/logo3.png" class="logo-brand" alt="logo">
+            <img src="Vista/Public/Imagenes/logo3.png" class="logo-brand" alt="logo">
             <ul class="list-inline">
-                <li class="list-inline-item footer-menu"><a href="#">Inicio</a></li>
-                <li class="list-inline-item footer-menu"><a href="#">Servicios</a></li>
-                <li class="list-inline-item footer-menu"><a href="#">Productos</a></li>
-                <li class="list-inline-item footer-menu"><a href="#">Nosotros</a></li>
-                <li class="list-inline-item footer-menu"><a href="#">Contáctanos</a></li>
-                <li class="list-inline-item footer-menu"><a href="#">Login</a></li>
+                <li class="list-inline-item footer-menu"><a href="#hero">Inicio</a></li>
+                <li class="list-inline-item footer-menu"><a href="#servicios">Servicios</a></li>
+                <li class="list-inline-item footer-menu"><a href="#productos">Productos</a></li>
+                <li class="list-inline-item footer-menu"><a href="#nosotros">Nosotros</a></li>
+                <li class="list-inline-item footer-menu"><a href="#contact">Contáctanos</a></li>
+                <li class="list-inline-item footer-menu"><a href="Vista/Login/login.php">Login</a></li>
             </ul>
             <ul class="list-inline">
                 <li class="list-inline-item"><a href="#"><i class="icon ion-logo-instagram"></i></a>
@@ -339,8 +342,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
-        <script type="text/javascript" src="Js/contacto.js"></script>
+        <script type="text/javascript" src="Vista/Public/Js/js_inicio/contacto.js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </body>

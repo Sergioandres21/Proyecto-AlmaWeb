@@ -154,7 +154,7 @@ section { padding: 80px 0; }
 //////////////*/
 
 #hero {
-    background-image: url('../Imagenes/Principal.jpg');
+    background-image: url('../../Imagenes/Principal.jpg');
     background-size: cover;
     padding-top: 90px;
     min-height: 700px;
@@ -221,6 +221,15 @@ section { padding: 80px 0; }
     background: #F8EEE7;
 }
 
+.plans2 {
+    padding: 70px 80px;
+    border-radius: 35px;
+    min-width: 450px;
+    text-align: center;
+    background: #F8EEE7;
+}
+
+
 .plan-light {
     background-color: var(--white-color);
     border: 2px solid var(--dark-color);
@@ -251,6 +260,18 @@ section { padding: 80px 0; }
     height: 450px;
 }
 
+.map-responsive iframe{
+
+    height:90%;
+
+    width:100%;
+
+}
+
+.map-responsive h4{
+
+    margin-bottom: 20px;
+}
 
 /* //////////////
    Footer
@@ -285,6 +306,8 @@ footer .list-inline .list-inline-item {
     h1 { font-size: 40px; line-height: normal; }
     .portfolio-details h2 { font-size: 32px; }
     .plans { min-width: unset; padding: 40px; }
+    .plans2 { min-width: unset; padding: 40px; }
+    .mapa { min-width: unset; padding: 40px; }
     .carousel-item p { font-size: 20px; }
 
     .footer-menu { 
