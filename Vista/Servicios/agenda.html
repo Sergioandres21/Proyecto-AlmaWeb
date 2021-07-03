@@ -128,93 +128,74 @@
             </div>
 
             <!-- Agenda -->
-            <div class="row">
-                <div class="col-sm-4">
-                    <label for="fecha" class="form-label">Fecha</label>
-                    <input type="date" class="form-control" id="fecha">
-                  </div>
-    
-                  <div class="col-sm-4">
-                    <label for="lastName" class="form-label">Hora</label>
-                    <input type="time" class="form-control" id="hora">
-                  </div>
+            
+                <form id="formulario" name="formulario" action="infocita.html">
+                    <div class="mb-2">
+                        <label for="fecha" class="form-label">Fecha</label>
+                        <input type="date" class="form-control" id="fecha" name="fecha">
+                      </div>
+        
+                      <div class="mb-2">
+                        <label for="hora" class="form-label">Hora</label>
+                        <input type="time" class="form-control" id="hora" name="hora">
+                      </div>
 
-                  <div class="col-md-4">
-                    <select class="btn" class="form-select" id="profesional" required>
-                        <option value="select">👤 Profesional</option>
+                  <div class="col-12">
+
+                    <p>Seleccione un profesional</p>
+                    <select class="btn" class="form-select" id="profesional" name="profesional">
+                        <option value="">👤 Profesional</option>
                         <option value="manuela">Manuela V</option>
                         <option value="alejandra">Alejandra</option>
                         <div class="dropdown">
                     </select>
                 </div>
-            </div> <br>
+             <br>
             <!--INFORMACIÓN DE BOLETA DE PAGO-->
 
             <div class="col-md-12 col-lg-12">
                 <h6 class="text-primary">Información de boleta de pago</h6>
-                <form class="needs-validation" novalidate>
                     <div class="row g-3">
                         <div class="col-sm-6">
-                            <label for="firstName" class="form-label">Nombres</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Se requiere un nombre valido.
-                            </div>
+                            <label for="nombre" class="form-label">Nombres</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre">
                         </div>
 
                         <div class="col-sm-6">
-                            <label for="lastName" class="form-label">Apellidos</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                            <div class="invalid-feedback">
-                                Se requiere un apellido valido.
-                            </div>
+                            <label for="apellido" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" id="apellido" name="apellido">
                         </div>
 
                         <div class="col-lg-12">
-                            <label for="tel" class="form-label">Numero de teléfono</label>
-                            <input type="tel" class="form-control" id="number" placeholder="3218909">
-                            <div class="invalid-feedback">
-                                Por favor ingrese un número valido.
-                            </div>
+                            <label for="celular" class="form-label">Numero de celular</label>
+                            <input type="tel" class="form-control" id="celular" name="celular">
                         </div>
 
                         <div class="col-lg-12">
                             <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="address" placeholder="ejemplo@ejemplo"
-                                required>
-                            <div class="invalid-feedback">
-                                Por favor ingrese una dirección de correo válida.
-                            </div>
+                            <input type="email" class="form-control" id="email" name="email">
                         </div>
 
                         <div class="col-md-6">
-                            <label for="state" class="form-check-input"></label>
-                            <select class="btn" class="form-select" id="state" required>
-                                <option value="select">📍 Departamento</option>
+                            <label for="departamento" class="form-check-input"></label>
+                            <select class="btn" class="form-select" id="departamento" name="departamento">
+                                <option value="">📍 Departamento</option>
                                 <option>Antioquia</option>
                                 <option>Bello</option>
-                                <div class="dropdown">
                             </select>
-                            <div class="invalid-feedback">
-                                Por favor selecciona un departamento.
-                            </div>
                         </div><br>
 
                         <div class="col-md-6">
-                            <label for="state" class="form-check-input"></label>
-                            <select class="btn" class="form-select" id="state" required>
-                                <option value="select">📍 Ciudad</option>
+                            <label for="ciudad" class="form-check-input"></label>
+                            <select class="btn" class="form-select" id="ciudad" name="ciudad">
+                                <option value="">📍 Ciudad</option>
                                 <option>Medellin</option>
                                 <option>Yolombo</option>
-                                <div class="dropdown">
                             </select>
-                            <div class="invalid-feedback">
-                                Por favor selecciona una ciudad.
-                            </div>
                         </div>
+
                     </div> <br>
-                    <a href="infocita.html"
-                        style="background: #f8ccbf;" class="btn btn-secondary mt-4 mb-4">Continuar</a> 
+                    <button style="background: #f8ccbf;" class="btn btn-secondary mt-4 mb-4" id="continuar">Continuar</button> 
                 </form>
             </div>
     </div>
@@ -268,9 +249,8 @@
     <!-- ========================= JS here ========================= -->
 
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -283,6 +263,10 @@
     <script src="../Public/Js/js_servicios/tiny-slider.js"></script>
     <script src="../Public/Js/js_servicios/glightbox.min.js"></script>
     <script src="../Public/Js/js_servicios/main.js"></script>
+
+    <script src="../Public/Js/js_servicios/validacionAgenda.js"></script>
+
+    <script src="../Public/Js/js_servicios/traducciones.js"></script>
 
 </body>
 

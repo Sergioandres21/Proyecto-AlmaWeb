@@ -388,3 +388,12 @@ footer .list-inline .list-inline-item {
       opacity: 0;
     }
   }
+
+.error{
+    color: #F44336;
+    padding-left: 12px;
+}
+
+.form-control.error {
+	border-color: #e74c3c;
+}

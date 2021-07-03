@@ -2634,6 +2634,7 @@ top: 2px;
   border: 1px solid #eee;
   border-radius: 4px;
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px),

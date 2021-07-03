@@ -161,72 +161,51 @@
         </div>
         <div class="col-md-7 col-lg-8">
           <h4 class="mb-3">Información de Envio</h4>
-          <form class="needs-validation" novalidate>
+          <form id="formulario" name="formulario" action="productos.html">
             <div class="row g-3">
               <div class="col-sm-6">
-                <label for="firstName" class="form-label">Nombres</label>
-                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Se requiere un nombre valido.
-                </div>
+                <label for="nombre" class="form-label">Nombres</label>
+                <input type="text" class="form-control" id="nombre" name="nombre">
               </div>
 
               <div class="col-sm-6">
-                <label for="lastName" class="form-label">Apellidos</label>
-                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-                <div class="invalid-feedback">
-                  Se requiere un apellido valido.
-                </div>
+                <label for="apellido" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellido" name="apellido">
               </div>
 
               <div class="col-12">
                 <label for="email" class="form-label">Correo</label>
-                <input type="email" class="form-control" id="email" placeholder="you@example.com">
-                <div class="invalid-feedback">
-                  Por favor ingrese un correo valido.
-                </div>
+                <input type="email" class="form-control" id="email" name="email">
               </div>
 
               <div class="col-12">
                 <label for="celular" class="form-label">Celular</label>
-                <input type="number" class="form-control" id="celular">
-                <div class="invalid-feedback">
-                  Por favor ingrese un celular valido.
-                </div>
+                <input type="number" class="form-control" id="celular" name="celular">
               </div>
 
               <div class="col-12">
-                <label for="address" class="form-label">Dirección</label>
-                <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-                <div class="invalid-feedback">
-                  Por favor ingrese una dirección valida.
-                </div>
+                <label for="direccion" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="direccion" name="direccion">
               </div>
 
               <div class="col-md-5 mt-4">
-                <label for="country" class="form-label">Departamento</label>
-                <select class="form-select" id="country">
+                <label for="Departamento" class="form-label">Departamento</label>
+                <select class="form-select" id="departamento" name="departamento">
                   <option value="">Selecciona...</option>
                   <option>Antioquia</option>
                   <option>Choco</option>
                   <option>Meta</option>
                 </select>
-                <div class="invalid-feedback">
-                  Por favor selecciona un departamento.
-                </div>
               </div>
 
               <div class="col-md-4 mt-4">
-                <label for="state" class="form-label">Municipio</label>
-                <select class="form-select" id="state" required>
+                <label for="municipio" class="form-label">Municipio</label>
+                <select class="form-select" id="municipio" name="municipio">
                   <option value="">Selecciona...</option>
                   <option>Medellin</option>
                   <option>Pueblorrico</option>
                   <option>Yolombo</option>
                 </select>
-                <div class="invalid-feedback">
-                  Por favor selecciona una ciudad.
-                </div>
               </div>
             </div>
 
@@ -236,11 +215,11 @@
 
             <div class="my-3">
               <div class="form-check">
-                <input id="entrega" name="paymentMethod" type="checkbox" class="form-check-input" required onchange="javascript:showContent2();">
+                <input id="entrega" name="entrega" type="checkbox" class="form-check-input" onchange="javascript:showContent2();">
                 <label class="form-check-label" for="credit">Contra entrega</label>
               </div>
               <div class="form-check">
-                <input id="pago" name="paymentMethod" type="checkbox" class="form-check-input" required onchange="javascript:showContent();">
+                <input id="pago" name="pago" type="checkbox" class="form-check-input" onchange="javascript:showContent();">
                 <label class="form-check-label" for="paypal">Transferencia Bancaría</label>
               </div>
             </div>
@@ -256,7 +235,7 @@
 
             <hr class="my-4">
 
-            <button class="w-100 btn btn-primary btn-lg mb-5" type="submit">Continuar</button>
+            <button class="w-100 btn btn-primary btn-lg mb-5" type="submit" id="pago">Confirmar</button>
           </form>
         </div>
       </div>
@@ -311,9 +290,8 @@
   <!-- ========================= JS here ========================= -->
 
   <script src="../Public/Js/js_productos/bootstrap.bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
@@ -327,6 +305,12 @@
   <script src="../Public/Js/js_productos/main.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!--Libreria para alertas-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script src="../Public/Js/js_productos/traducciones.js"></script>
+
+  <script src="../Public/Js/js_productos/validarCompra.js"></script>
 
   <script>
 
