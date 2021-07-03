@@ -134,7 +134,8 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="PerfilAdmin.html">Mi perfil <i
                                             class="icon ion-md-person lead mr-2"></i></a>
-                                    <a class="dropdown-item" href="../Configuracion/indexconfiguracion.html">Configuración <i
+                                    <a class="dropdown-item"
+                                        href="../Configuracion/indexconfiguracion.html">Configuración <i
                                             class="icon ion-md-settings lead mr-2"></i></a>
                                     <a class="dropdown-item" href="../CuentaUsuario/usuario.html">Cuentas usuario <i
                                             class="icon ion-md-people lead mr-2"></i></a>
@@ -151,6 +152,73 @@
             <header>
                 <h3 class='text-center'></h3>
             </header>
+
+
+            <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document" id="tabla">
+                    <div class="modal-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <p>Nombre del reporte:
+                                          <br>
+
+                                        <b> Reporte de stock de productos mes de marzo del 2021.</b> <br>
+
+                                        Descripción del reporte de stock de productos: <br>
+                                        <b> Se lista el stock de los productos en el mes de marzo del
+                                            año 2021: </b>
+                                    </p>
+                                </div>
+                                <div class="col-6 mb-4">
+                                    <img src="../Public/Imagenes/logo3.png" class="logo-brand" />
+                                </div>
+                            </div>
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="row">Identificador producto</th>
+                                        <th scope="col">Nombre</th>
+                                        <th scope="col">Cantidad</th>
+                                        <th scope="col">Marca</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">401</th>
+                                        <td>Aceite de coco</td>
+                                        <td>30</td>
+                                        <td>Naturela</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">402</th>
+                                        <td>Jabón de sandia</td>
+                                        <td>25</td>
+                                        <td>Naturela</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">403</th>
+                                        <td>Serum facial de aloe vera</td>
+                                        <td>15</td>
+                                        <td>Naturela</td>
+                                    </tr>
+                                </tbody>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <label for="">Fecha inicio</label>
+                                        <h4>01/03/2021</h4>
+                                    </div>
+                                    <div class="col-6">
+                                        <label for="">Fecha Fin</label>
+                                        <h4>29/03/2021</h4>
+                                    </div>
+                                </div>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
             <div id="content" class="bg-white w-100">
