@@ -1,5 +1,5 @@
 
-$("#formulario").validate({
+$("#formulario2").validate({
     rules: {
       nombre:{
         required: true,
@@ -59,7 +59,7 @@ $.validator.addMethod('validarCelu', function(value, element, param)
   
   
   $("#Actualizar").click(function(){
-    if($("#formulario").valid() == false){
+    if($("#formulario2").valid() == false){
      return;
     }
     swal('Correcto','Información actualizada con exito','success');

@@ -9,21 +9,18 @@
     <meta name="generator" content="Hugo 0.83.1">
     <title>Agenda</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="img/A.png" />
-
+    <link rel="icon" type="image/x-icon" href="../Public/Imagenes/A.png" />
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
-
-
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
-    <link rel="stylesheet" href="assets/css/tiny-slider.css" />
-    <link rel="stylesheet" href="assets/css/glightbox.min.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="index_estilo.css" />
+    <link rel="stylesheet" href="../Public/Css/css_servicios/LineIcons.3.0.css" />
+    <link rel="stylesheet" href="../Public/Css/css_servicios/tiny-slider.css" />
+    <link rel="stylesheet" href="../Public/Css/css_servicios/glightbox.min.css" />
+    <link rel="stylesheet" href="../Public/Css/css_servicios/main.css" />
+    <link rel="stylesheet" href="../Public/Css/css_servicios/index_estilo.css" />
     <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
 
     <style>
@@ -44,7 +41,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="form-validation.css" rel="stylesheet">
+    <link href="../Public/Css/css_servicios/form-validation.css" rel="stylesheet">
 </head>
 
 <body class="bg-light">
@@ -62,17 +59,16 @@
 
     <!-- Start Header Area -->
 
-
     <header class="header navbar-area">
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <img src="Imagenes/logo3.png" class="logo-brand" alt="logo">
+                <img src="../Public/Imagenes/logo3.png" class="logo-brand" alt="logo">
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <i class="icon ion-md-menu"></i>
                 </button>
-
+    
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
@@ -81,12 +77,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="indexservicio.html">
+                            <a class="nav-link" href="../Servicios/indexservicio.html">
                                 <ion-icon name="bookmarks-outline"></ion-icon> Servicios
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../Productos/productos.html">
+                            <a class="nav-link" href="productos.html">
                                 <ion-icon name="bag-handle-outline"></ion-icon> Productos
                             </a>
                         </li>
@@ -101,7 +97,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="nav-link select" href="../Productos/carrito.html">
+                            <a class="nav-link select" href="carrito.html">
                                 <ion-icon name="cart-outline"></ion-icon> Carrito
                             </a>
                         </li>
@@ -127,18 +123,29 @@
     <div class="container">
         <main>
             <div class="py-5 text-center">
-                <img class="d-block mx-auto mb-4" src="assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
                 <h2>Agenda y datos boleta de pago</h2>
                 <p class="lead">A dos click de agendar tu cita😉</p>
             </div>
 
             <!-- Agenda -->
             <div class="row">
-                <div class="form-group col-md-12" style="margin-bottom: 0%; margin-left: 2%;">
-                    <h6 class="text-primary" >Agenda</h6>
-                    <label class="labelRegistror" for="f_inicial" style="padding-left: 0%;">Seleccione el día<span
-                            class="required"></span></label>
-                    <input class="form-control" type="date" name="f_inicial" id="f_inicial" style="width: 50%;">
+                <div class="col-sm-4">
+                    <label for="fecha" class="form-label">Fecha</label>
+                    <input type="date" class="form-control" id="fecha">
+                  </div>
+    
+                  <div class="col-sm-4">
+                    <label for="lastName" class="form-label">Hora</label>
+                    <input type="time" class="form-control" id="hora">
+                  </div>
+
+                  <div class="col-md-4">
+                    <select class="btn" class="form-select" id="profesional" required>
+                        <option value="select">👤 Profesional</option>
+                        <option value="manuela">Manuela V</option>
+                        <option value="alejandra">Alejandra</option>
+                        <div class="dropdown">
+                    </select>
                 </div>
             </div> <br>
             <!--INFORMACIÓN DE BOLETA DE PAGO-->
@@ -206,8 +213,8 @@
                             </div>
                         </div>
                     </div> <br>
-                    <a href="metododepago.html"
-                        style="background: #f8ccbf;" class="btn btn-secondary mt-4">Continuar</a> 
+                    <a href="infocita.html"
+                        style="background: #f8ccbf;" class="btn btn-secondary mt-4 mb-4">Continuar</a> 
                 </form>
             </div>
     </div>
@@ -218,28 +225,39 @@
     <!-- Start Footer Area -->
     <footer>
         <div class="container">
-            <img src="Imagenes/logo3.png" class="logo-brand" alt="logo">
-            <ul class="list-inline">
-                <li class="list-inline-item footer-menu"><a href="#">Inicio</a></li>
-                <li class="list-inline-item footer-menu"><a href="#">Servicios</a></li>
-                <li class="list-inline-item footer-menu"><a href="productos.html">Productos</a></li>
-                <li class="list-inline-item footer-menu"><a href="#">Nosotros</a></li>
-                <li class="list-inline-item footer-menu"><a href="#">Contáctanos</a></li>
-                <li class="list-inline-item footer-menu"><a href="#">Login</a></li>
-            </ul>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#"><i class="icon ion-logo-instagram"></i></a>
-                </li>
-                <li class="list-inline-item"><a href="#"><i class="icon ion-logo-whatsapp"></i></a>
-                </li>
-                <li class="list-inline-item"><a href="#"><i class="icon ion-md-mail"></i></a>
-                </li>
-            </ul>
-            <small>©2021 Todos los derechos reservados. Creado por <a href="#" class="font-weight-bold" target="_blank"
-                    rel="noopener">Equipo
-                    AlmaWeb</a></small>
+          <img src="../Public/Imagenes/logo3.png" class="logo-brand" alt="logo">
+          <ul class="list-inline">
+            <li class="list-inline-item footer-menu"><a href="../../Index.php">
+                    <ion-icon name="home-outline"></ion-icon> Inicio
+                </a></li>
+            <li class="list-inline-item footer-menu"><a href="indexservicio.html">
+                    <ion-icon name="bookmarks-outline"></ion-icon> Servicios
+                </a></li>
+            <li class="list-inline-item footer-menu"><a href="../Productos/productos.html">
+                    <ion-icon name="bag-handle-outline"></ion-icon> Productos
+                </a></li>
+            <li class="list-inline-item footer-menu"><a href="../../Index.php #nosotros">
+                    <ion-icon name="accessibility-outline"></ion-icon> Nosotros
+                </a></li>
+            <li class="list-inline-item footer-menu"><a href="../../Index.php #contact">
+                    <ion-icon name="at-circle-outline"></ion-icon> Contáctanos
+                </a></li>
+            <li class="list-inline-item footer-menu"><a href="../Login/login.php">
+                    <ion-icon name="log-in-outline"></ion-icon> Login
+                </a></li>
+        </ul>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://www.instagram.com/almaestetica20/" target="_blank"><i class="icon ion-logo-instagram"></i></a>
+            </li>
+            <li class="list-inline-item"><a href="https://wa.link/kobe1c" target="_blank"><i class="icon ion-logo-whatsapp"></i></a>
+            </li>
+            <li class="list-inline-item"><a href="#contact"><i class="icon ion-md-mail"></i></a>
+            </li>
+        </ul>
+          <small>©2021 Todos los derechos reservados. Creado por <a href="#" class="font-weight-bold" target="_blank"
+              rel="noopener">Equipo AlmaWeb</a></small>
         </div>
-    </footer>
+      </footer>
     <!--/ End Footer Area -->
 
     <!-- ========================= scroll-top ========================= -->
@@ -260,11 +278,12 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script src="form-validation.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/tiny-slider.js"></script>
-    <script src="assets/js/glightbox.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="../Public/Js/js_servicios/form-validation.js"></script>
+    <script src="../Public/Js/js_servicios/bootstrap.min.js"></script>
+    <script src="../Public/Js/js_servicios/tiny-slider.js"></script>
+    <script src="../Public/Js/js_servicios/glightbox.min.js"></script>
+    <script src="../Public/Js/js_servicios/main.js"></script>
+
 </body>
 
 </html>

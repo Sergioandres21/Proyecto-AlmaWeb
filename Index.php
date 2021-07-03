@@ -319,11 +319,11 @@
                 <li class="list-inline-item footer-menu"><a href="Vista/Login/login.php">Login</a></li>
             </ul>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#"><i class="icon ion-logo-instagram"></i></a>
+                <li class="list-inline-item"><a href="https://www.instagram.com/almaestetica20/" target="_blank"><i class="icon ion-logo-instagram"></i></a>
                 </li>
-                <li class="list-inline-item"><a href="#"><i class="icon ion-logo-whatsapp"></i></a>
+                <li class="list-inline-item"><a href="https://wa.link/kobe1c" target="_blank"><i class="icon ion-logo-whatsapp"></i></a>
                 </li>
-                <li class="list-inline-item"><a href="#"><i class="icon ion-md-mail"></i></a>
+                <li class="list-inline-item"><a href="#contact"><i class="icon ion-md-mail"></i></a>
                 </li>
             </ul>
             <small>©2021 Todos los derechos reservados. Creado por <a href="#" class="font-weight-bold" target="_blank"

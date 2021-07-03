@@ -83,12 +83,13 @@
                 <div class="text-center">
                   <a href="Olvidastecontrasena.html">¿Olvidaste tu contraseña?</a>
                 </div>
-                <div class="text-center">
+                <div class="col-12 text-center mb-2">
                   <a href="Olvidousuario.html">¿Olvidaste tu usuario?</a>
                 </div>
               </div>
             </form>
-            <div class="text-center">¿No tiene una cuenta de AlmaWeb?
+            <div class="col-12 text-center">
+              <p>¿No tiene una cuenta de AlmaWeb?</p>
               <a href="../Registro Usuario/RegistroUsuario.html" class="boton-regis btn-lg">Registrarme</a>
             </div>
           </div>

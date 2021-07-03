@@ -8,12 +8,14 @@
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
   <meta name="generator" content="Hugo 0.83.1">
   <title>Formulario de Pago - AlmaWeb</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../Public/Imagenes/favicon.svg" />
 
   <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
 
 
 
   <!-- Bootstrap core CSS -->
+  <!---
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
@@ -22,6 +24,16 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="index_estilo.css" />
   <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+  -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../Public/Css/css_productos/LineIcons.3.0.css" />
+  <link rel="stylesheet" href="../Public/Css/css_productos/tiny-slider.css" />
+  <link rel="stylesheet" href="../Public/Css/css_productos/glightbox.min.css" />
+  <link rel="stylesheet" href="../Public/Css/css_productos/main.css" />
+  <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../Public/Css/css_productos/index_estilo.css" />
 
   <style>
     .bd-placeholder-img {
@@ -41,7 +53,7 @@
 
 
   <!-- Custom styles for this template -->
-  <link href="form-validation.css" rel="stylesheet">
+  <link href="../Public/Css/css_productos/form-validation.css" rel="stylesheet">
 </head>
 
 <body class="bg-light">
@@ -63,7 +75,7 @@
   <header class="header navbar-area">
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
-        <img src="Imagenes/logo3.png" class="logo-brand" alt="logo">
+        <img src="../Public/Imagenes/logo3.png" class="logo-brand" alt="logo">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="icon ion-md-menu"></i>
@@ -72,41 +84,41 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="../../Index.php">
-                    <ion-icon name="home-outline"></ion-icon> Inicio
-                </a>
+              <a class="nav-link" href="../../Index.php">
+                <ion-icon name="home-outline"></ion-icon> Inicio
+              </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../Servicios/indexservicio.html">
-                    <ion-icon name="bookmarks-outline"></ion-icon> Servicios
-                </a>
+              <a class="nav-link" href="../Servicios/indexservicio.html">
+                <ion-icon name="bookmarks-outline"></ion-icon> Servicios
+              </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="productos.html">
-                    <ion-icon name="bag-handle-outline"></ion-icon> Productos
-                </a>
+              <a class="nav-link" href="productos.html">
+                <ion-icon name="bag-handle-outline"></ion-icon> Productos
+              </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../../Index.php #nosotros">
-                    <ion-icon name="accessibility-outline"></ion-icon> Nosotros
-                </a>
+              <a class="nav-link" href="../../Index.php #nosotros">
+                <ion-icon name="accessibility-outline"></ion-icon> Nosotros
+              </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../../Index.php #contact">
-                    <ion-icon name="at-circle-outline"></ion-icon> Contáctanos
-                </a>
+              <a class="nav-link" href="../../Index.php #contact">
+                <ion-icon name="at-circle-outline"></ion-icon> Contáctanos
+              </a>
             </li>
             <li>
-                <a class="nav-link select" href="carrito.html">
-                    <ion-icon name="cart-outline"></ion-icon> Carrito
-                </a>
+              <a class="nav-link select" href="carrito.html">
+                <ion-icon name="cart-outline"></ion-icon> Carrito
+              </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../Login/login.php">
-                    <ion-icon name="log-in-outline"></ion-icon> Iniciar sesión
-                </a>
+              <a class="nav-link" href="../Login/login.php">
+                <ion-icon name="log-in-outline"></ion-icon> Iniciar sesión
+              </a>
             </li>
-        </ul>
+          </ul>
         </div>
       </div>
     </nav>
@@ -123,9 +135,7 @@
   <div class="container">
     <main>
       <div class="py-5 text-center">
-        <img class="d-block mx-auto mb-4" src="assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
         <h2>Formulario de Pago</h2>
-        <p class="lead">Texto de ejemplo</p>
       </div>
 
       <div class="row g-5">
@@ -178,6 +188,14 @@
               </div>
 
               <div class="col-12">
+                <label for="celular" class="form-label">Celular</label>
+                <input type="number" class="form-control" id="celular">
+                <div class="invalid-feedback">
+                  Por favor ingrese un celular valido.
+                </div>
+              </div>
+
+              <div class="col-12">
                 <label for="address" class="form-label">Dirección</label>
                 <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
                 <div class="invalid-feedback">
@@ -185,9 +203,9 @@
                 </div>
               </div>
 
-              <div class="col-md-5">
+              <div class="col-md-5 mt-4">
                 <label for="country" class="form-label">Departamento</label>
-                <select class="form-select" id="country" required>
+                <select class="form-select" id="country">
                   <option value="">Selecciona...</option>
                   <option>Antioquia</option>
                   <option>Choco</option>
@@ -198,8 +216,8 @@
                 </div>
               </div>
 
-              <div class="col-md-4">
-                <label for="state" class="form-label">Ciudad</label>
+              <div class="col-md-4 mt-4">
+                <label for="state" class="form-label">Municipio</label>
                 <select class="form-select" id="state" required>
                   <option value="">Selecciona...</option>
                   <option>Medellin</option>
@@ -218,53 +236,27 @@
 
             <div class="my-3">
               <div class="form-check">
-                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
-                <label class="form-check-label" for="credit">Tarjeta de Credito</label>
+                <input id="entrega" name="paymentMethod" type="checkbox" class="form-check-input" required onchange="javascript:showContent2();">
+                <label class="form-check-label" for="credit">Contra entrega</label>
               </div>
               <div class="form-check">
-                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
-                <label class="form-check-label" for="paypal">Transferencia</label>
+                <input id="pago" name="paymentMethod" type="checkbox" class="form-check-input" required onchange="javascript:showContent();">
+                <label class="form-check-label" for="paypal">Transferencia Bancaría</label>
               </div>
             </div>
 
-            <div class="row gy-3">
-              <div class="col-md-6">
-                <label for="cc-name" class="form-label">Nombre en Tarjeta</label>
-                <input type="text" class="form-control" id="cc-name" placeholder="" required>
-                <small class="text-muted">Nombre como aparece en la tarjeta</small>
-                <div class="invalid-feedback">
-                  Nombre en tarjeta es requerido.
-                </div>
-              </div>
+            <div id="transferencia" style="display: none;">
+              <p class="text-success">Se debe de realizar una transferencia bancaria al Número de cuenta #0000
+                y envíar el comprovante al whatsApp.</p>
+            </div>
 
-              <div class="col-md-6">
-                <label for="cc-number" class="form-label">Número de tarjeta</label>
-                <input type="text" class="form-control" id="cc-number" placeholder="" required>
-                <div class="invalid-feedback">
-                  El numero de la tarjeta de credito es requerido.
-                </div>
-              </div>
-
-              <div class="col-md-3">
-                <label for="cc-expiration" class="form-label">Expiración</label>
-                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-                <div class="invalid-feedback">
-                  Fecha de expiración es requerida.
-                </div>
-              </div>
-
-              <div class="col-md-3">
-                <label for="cc-cvv" class="form-label">CVV</label>
-                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-                <div class="invalid-feedback">
-                  El codigo de seguridad es requerido.
-                </div>
-              </div>
+            <div id="contra" style="display: none;">
+              <p class="text-success">Recuerde diligenciar correctamente su dirección para realizar la entrega.</p>
             </div>
 
             <hr class="my-4">
 
-            <button class="w-100 btn btn-primary btn-lg" type="submit">Continuar</button>
+            <button class="w-100 btn btn-primary btn-lg mb-5" type="submit">Continuar</button>
           </form>
         </div>
       </div>
@@ -274,33 +266,35 @@
   <!-- Start Footer Area -->
   <footer>
     <div class="container">
-      <img src="Imagenes/logo3.png" class="logo-brand" alt="logo">
+      <img src="../Public/Imagenes/logo3.png" class="logo-brand" alt="logo">
       <ul class="list-inline">
-        <li class="list-inline-item footer-menu"><a href="#">
+        <li class="list-inline-item footer-menu"><a href="../../Index.php">
             <ion-icon name="home-outline"></ion-icon> Inicio
           </a></li>
-        <li class="list-inline-item footer-menu"><a href="#">
+        <li class="list-inline-item footer-menu"><a href="../Servicios/indexservicio.html">
             <ion-icon name="bookmarks-outline"></ion-icon> Servicios
           </a></li>
-        <li class="list-inline-item footer-menu"><a href="productos.html">
+        <li class="list-inline-item footer-menu"><a href="../Productos/productos.html">
             <ion-icon name="bag-handle-outline"></ion-icon> Productos
           </a></li>
-        <li class="list-inline-item footer-menu"><a href="#">
+        <li class="list-inline-item footer-menu"><a href="../../Index.php #nosotros">
             <ion-icon name="accessibility-outline"></ion-icon> Nosotros
           </a></li>
-        <li class="list-inline-item footer-menu"><a href="#">
+        <li class="list-inline-item footer-menu"><a href="../../Index.php #contact">
             <ion-icon name="at-circle-outline"></ion-icon> Contáctanos
           </a></li>
-        <li class="list-inline-item footer-menu"><a href="#">
+        <li class="list-inline-item footer-menu"><a href="../Login/login.php">
             <ion-icon name="log-in-outline"></ion-icon> Login
           </a></li>
       </ul>
       <ul class="list-inline">
-        <li class="list-inline-item"><a href="#"><i class="icon ion-logo-instagram"></i></a>
+        <li class="list-inline-item"><a href="https://www.instagram.com/almaestetica20/" target="_blank"><i
+              class="icon ion-logo-instagram"></i></a>
         </li>
-        <li class="list-inline-item"><a href="#"><i class="icon ion-logo-whatsapp"></i></a>
+        <li class="list-inline-item"><a href="https://wa.link/kobe1c" target="_blank"><i
+              class="icon ion-logo-whatsapp"></i></a>
         </li>
-        <li class="list-inline-item"><a href="#"><i class="icon ion-md-mail"></i></a>
+        <li class="list-inline-item"><a href="#contact"><i class="icon ion-md-mail"></i></a>
         </li>
       </ul>
       <small>©2021 Todos los derechos reservados. Creado por <a href="#" class="font-weight-bold" target="_blank"
@@ -316,7 +310,7 @@
 
   <!-- ========================= JS here ========================= -->
 
-  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../Public/Js/js_productos/bootstrap.bundle.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -326,13 +320,40 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="form-validation.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/tiny-slider.js"></script>
-  <script src="assets/js/glightbox.min.js"></script>
-  <script src="assets/js/main.js"></script>
+  <script src="../Public/Js/js_productos/form-validation.js"></script>
+  <script src="../Public/Js/js_productos/bootstrap.min.js"></script>
+  <script src="../Public/Js/js_productos/tiny-slider.js"></script>
+  <script src="../Public/Js/js_productos/glightbox.min.js"></script>
+  <script src="../Public/Js/js_productos/main.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script>
+
+function showContent() {
+        element = document.getElementById("transferencia");
+        check = document.getElementById("pago");
+        if (check.checked) {
+            element.style.display='block';
+        }
+        else {
+            element.style.display='none';
+        }
+  }
+
+  function showContent2() {
+        element = document.getElementById("contra");
+        check = document.getElementById("entrega");
+        if (check.checked) {
+            element.style.display='block';
+        }
+        else {
+            element.style.display='none';
+        }
+  }
+
+
+  </script>
 </body>
 
 </html>

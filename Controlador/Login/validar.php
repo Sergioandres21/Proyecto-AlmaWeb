@@ -11,18 +11,23 @@ $conexion = mysqli_connect("localhost","root","","almaweb");
 
 $consulta = "SELECT * FROM usuarios where IdUsuario = '$usuario' and Contraseña = '$contrasena' and IdRol = '1'";
 $consulta2 = "SELECT * FROM usuarios where IdUsuario = '$usuario' and Contraseña = '$contrasena' and IdRol = '2'";
+$consulta3 = "SELECT * FROM usuarios where IdUsuario = '$usuario' and Contraseña = '$contrasena' and IdRol = '3'";
 
 $resultado = mysqli_query($conexion,$consulta);
 $resultado2 = mysqli_query($conexion,$consulta2);
+$resultado3 = mysqli_query($conexion,$consulta3);
 
 $filas=mysqli_num_rows($resultado);
 $filas1 = mysqli_num_rows($resultado2);
+$filas2 = mysqli_num_rows($resultado3);
 
 
 if($filas){
     header("location:../../Vista/Procesos/dashboard.html");
 } elseif ($filas1) {
-    header("location:../../Vista/Vista/usuario/index.html");
+    header("location:../../Vista/Usuario/index.html");
+} elseif ($filas2){
+    header("location:../../Vista/Profesional/index.html");
 }else{
     ?>
     <?php
@@ -38,6 +43,9 @@ if($filas){
     <?php 
 }
 mysqli_free_result($resultado);
+mysqli_free_result($resultado1);
+mysqli_free_result($resultado2);
+
 mysqli_close($conexion);
 
 ?>
