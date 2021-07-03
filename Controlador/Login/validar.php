@@ -23,9 +23,9 @@ $filas2 = mysqli_num_rows($resultado3);
 
 
 if($filas){
-    header("location:../../Vista/Procesos/dashboard.html");
-} elseif ($filas1) {
     header("location:../../Vista/Usuario/index.html");
+} elseif ($filas1) {
+    header("location:../../Vista/Procesos/dashboard.html");
 } elseif ($filas2){
     header("location:../../Vista/Profesional/index.html");
 }else{

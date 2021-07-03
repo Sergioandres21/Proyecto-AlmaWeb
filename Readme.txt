@@ -479,3 +479,18 @@ CREATE TABLE CONTACTO(
 	Descripcion VARCHAR(250) NULL,
 	PRIMARY KEY (ID)
 );
+
+---- REGISTROS INICIO DE SESIÓN ---
+
+/* ROLES */
+
+INSERT INTO ROLES (IdRol,Nombre,Descripcion,Estado) VALUES ('1','CLIENTE','PERMITE CONECTAR CLIENTES A NUESTRA COMPAÑIA','1');
+INSERT INTO ROLES (IdRol,Nombre,Descripcion,Estado) VALUES ('2','ADMINISTRADOR','PERMITE CREAR,ADMINISTRAR Y CARGAR DATOS AL SISTEMA','1');
+INSERT INTO ROLES (IdRol,Nombre,Descripcion,Estado) VALUES ('3','PROFESIONAL','PERMITE CREAR Y CARGAR DATOS AL SISTEMA','1');
+
+
+/* USUARIO */
+
+INSERT INTO USUARIOS (IdUsuario,IdRol,Email,Contrasena,ImagenUsuario,Celular,Estado) VALUES ('10020','1','sergio@hotmail.com','sergio1',0x1,'46598','1');
+INSERT INTO USUARIOS (IdUsuario,IdRol,Email,Contrasena,ImagenUsuario,Celular,Estado) VALUES ('123','2','andres@hotmail.com','andres1',0x4,'976443','1');
+INSERT INTO USUARIOS (IdUsuario,IdRol,Email,Contrasena,ImagenUsuario,Celular,Estado) VALUES ('1234','3','sofia@hotmail.com','sofia1',0x5,'466780','1');
