@@ -18,6 +18,24 @@
         $("#evento").modal("show");
       },
 
+      events : [
+        {
+            title  : 'Cita limpieza fácial',
+            start  : '2021-07-14 11:00:00',
+            allDay : false
+        },
+        {
+            title  : 'Cita depilación con cera',
+            start  : '2021-07-10 10:30:00',
+            allDay: false,
+        },
+        {
+            title  : 'Cita masaje de relajación',
+            start  : '2021-07-09 12:30:00',
+            allDay : false // will make the time show
+        }
+    ]
+
     });
     calendar.render();
   });

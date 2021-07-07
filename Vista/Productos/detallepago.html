@@ -5,26 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
-  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-  <meta name="generator" content="Hugo 0.83.1">
   <title>Formulario de Pago - AlmaWeb</title>
   <link rel="shortcut icon" type="image/x-icon" href="../Public/Imagenes/favicon.svg" />
-
-  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/checkout/">
-
-
-
-  <!-- Bootstrap core CSS -->
-  <!---
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/LineIcons.3.0.css" />
-  <link rel="stylesheet" href="assets/css/tiny-slider.css" />
-  <link rel="stylesheet" href="assets/css/glightbox.min.css" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <link rel="stylesheet" href="index_estilo.css" />
-  <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
-  -->
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -51,9 +33,6 @@
     }
   </style>
 
-
-  <!-- Custom styles for this template -->
-  <link href="../Public/Css/css_productos/form-validation.css" rel="stylesheet">
 </head>
 
 <body class="bg-light">
@@ -73,7 +52,7 @@
 
 
   <header class="header navbar-area">
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg">
       <div class="container">
         <img src="../Public/Imagenes/logo3.png" class="logo-brand" alt="logo">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -173,24 +152,24 @@
                 <input type="text" class="form-control" id="apellido" name="apellido">
               </div>
 
-              <div class="col-12">
+              <div class="col-12 mt-3">
                 <label for="email" class="form-label">Correo</label>
                 <input type="email" class="form-control" id="email" name="email">
               </div>
 
-              <div class="col-12">
+              <div class="col-12 mt-3">
                 <label for="celular" class="form-label">Celular</label>
                 <input type="number" class="form-control" id="celular" name="celular">
               </div>
 
-              <div class="col-12">
+              <div class="col-12 mt-3">
                 <label for="direccion" class="form-label">Dirección</label>
                 <input type="text" class="form-control" id="direccion" name="direccion">
               </div>
 
-              <div class="col-md-5 mt-4">
+              <div class="col-md-6 mt-4">
                 <label for="Departamento" class="form-label">Departamento</label>
-                <select class="form-select" id="departamento" name="departamento">
+                <select class="form-control" id="departamento" name="departamento">
                   <option value="">Selecciona...</option>
                   <option>Antioquia</option>
                   <option>Choco</option>
@@ -198,9 +177,9 @@
                 </select>
               </div>
 
-              <div class="col-md-4 mt-4">
+              <div class="col-md-6 mt-4">
                 <label for="municipio" class="form-label">Municipio</label>
-                <select class="form-select" id="municipio" name="municipio">
+                <select class="form-control" id="municipio" name="municipio">
                   <option value="">Selecciona...</option>
                   <option>Medellin</option>
                   <option>Pueblorrico</option>

@@ -133,7 +133,8 @@
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="PerfilAdmin.html">Mi perfil <i
                                             class="icon ion-md-person lead mr-2"></i></a>
-                                    <a class="dropdown-item" href="../Configuracion/indexconfiguracion.html">Configuración <i
+                                    <a class="dropdown-item"
+                                        href="../Configuracion/indexconfiguracion.html">Configuración <i
                                             class="icon ion-md-settings lead mr-2"></i></a>
                                     <a class="dropdown-item" href="../CuentaUsuario/usuario.html">Cuentas usuario <i
                                             class="icon ion-md-people lead mr-2"></i></a>
@@ -245,7 +246,7 @@
                                             <a href="#" onclick="mensaje2();" class="delete" data-toggle="modal"><i
                                                     class="icon ion-md-power"></i></a>
                                             <a href="#miBoleta" onclick="" class="view" data-toggle="modal">
-                                                    <i class="icon ion-md-eye"></i></a>
+                                                <i class="icon ion-md-eye"></i></a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -271,7 +272,7 @@
                                             <a href="#" onclick="mensaje2();" class="delete" data-toggle="modal"><i
                                                     class="icon ion-md-power"></i></a>
                                             <a href="#miBoleta" onclick="" class="view" data-toggle="modal">
-                                                    <i class="icon ion-md-eye"></i></a>
+                                                <i class="icon ion-md-eye"></i></a>
                                         </td>
                                     </tr>
 
@@ -461,13 +462,15 @@
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label for="fechapagoM" class="col-form-label">Fecha de pago:</label>
-                                                <input type="date" class="form-control" id="fechapagoM" name="fechapagoM">
+                                                <input type="date" class="form-control" id="fechapagoM"
+                                                    name="fechapagoM">
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label for="totalpagoM" class="col-form-label">Total pago:</label>
-                                                <input type="text" class="form-control" id="totalpagoM" name="totalpagoM">
+                                                <input type="text" class="form-control" id="totalpagoM"
+                                                    name="totalpagoM">
                                             </div>
                                         </div>
                                         <div class="col-lg-6">
@@ -506,7 +509,7 @@
                             </div>
 
 
-                            <div class="modal-body">
+                            <div class="modal-body" id="contenido">
                                 <div class="row">
 
 
@@ -607,59 +610,64 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
-                                <button type="button" id="imprimir" class="btn btn-success">Imprimir</button>
+                                <button type="button" id="btnCrearPdf" class="btn btn-success">Imprimir</button>
                             </div>
                         </div>
-                        </div>
-                        </div>
+                    </div>
+                </div>
 
-                        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-                            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-                            crossorigin="anonymous"></script>
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+                    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
-                        <script
-                            src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+                <script
+                    src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
 
-                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-                            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-                            crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                    crossorigin="anonymous"></script>
 
-                        <!--Libreria para alertas-->
-                        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+                <!-- LIBRERIA PDF -->
 
-                        <script src="../Public/Js/js_procesos/traducciones.js"></script>
+                <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
 
-                        <!-- Optional JavaScript -->
-                        <script type="text/javascript" src="../Public/Js/js_procesos/validacionBoleta.js"></script>
+                <script type="text/javascript" src="../Public/Js/js_procesos/boleta.js"></script>
 
-                        <script>
-                            $(document).ready(function () {
-                                $('#sidebarCollapse').on('click', function () {
-                                    $('#sidebar').toggleClass('active');
-                                });
+                <!--Libreria para alertas-->
+                <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+                <script src="../Public/Js/js_procesos/traducciones.js"></script>
+
+                <!-- Optional JavaScript -->
+                <script type="text/javascript" src="../Public/Js/js_procesos/validacionBoleta.js"></script>
+
+                <script>
+                    $(document).ready(function () {
+                        $('#sidebarCollapse').on('click', function () {
+                            $('#sidebar').toggleClass('active');
+                        });
+                    });
+                </script>
+
+                <script>
+                    // Seleccionar y desactivar check box
+                    var checkbox = $('table tbody input[type="checkbox"]');
+                    $("#selectAll").click(function () {
+                        if (this.checked) {
+                            checkbox.each(function () {
+                                this.checked = true;
                             });
-                        </script>
-
-                        <script>
-                            // Seleccionar y desactivar check box
-                            var checkbox = $('table tbody input[type="checkbox"]');
-                            $("#selectAll").click(function () {
-                                if (this.checked) {
-                                    checkbox.each(function () {
-                                        this.checked = true;
-                                    });
-                                } else {
-                                    checkbox.each(function () {
-                                        this.checked = false;
-                                    });
-                                }
+                        } else {
+                            checkbox.each(function () {
+                                this.checked = false;
                             });
-                            checkbox.click(function () {
-                                if (!this.checked) {
-                                    $("#selectAll").prop("checked", false);
-                                }
-                            });
-                        </script>
+                        }
+                    });
+                    checkbox.click(function () {
+                        if (!this.checked) {
+                            $("#selectAll").prop("checked", false);
+                        }
+                    });
+                </script>
 
 </body>
 

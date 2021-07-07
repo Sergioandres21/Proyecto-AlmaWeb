@@ -9,6 +9,9 @@ $("#formulario").validate({
     profesional: {
         required: true,
     },
+    servicio: {
+        required: true,
+    },
     nombre: {
         required: true,
         maxlength: 45,
