@@ -1,6 +1,6 @@
 
 <?php 
 
-$conexion = mysqli_connect("localhost","root","","almaweb");
+$conexion = mysqli_connect("localhost","root","","almaweb2");
 
 ?>

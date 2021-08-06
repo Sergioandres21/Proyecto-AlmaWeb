@@ -6,7 +6,7 @@ $contrasena = $_POST['contrasena'];
 session_start();
 $_SESSION['usuario']= $usuario;
 
-$conexion = mysqli_connect("localhost","root","","almaweb");
+$conexion = mysqli_connect("localhost","root","","almaweb2");
 // include('db.php');
 
 $consulta = "SELECT * FROM usuarios where IdUsuario = '$usuario' and Contraseña = '$contrasena' and IdRol = '1'";
